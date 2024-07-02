@@ -13,12 +13,11 @@ body {
 button {
     font-size: 1rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
     display: inline-block;
     text-align: center;
     font-weight: bold;
     padding: 0.3rem 1rem;
-    border: 3px solid #FFA903;
+    border: 2px solid #FFA903;
     border-radius: 10px;
     position: relative;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
@@ -27,6 +26,7 @@ button {
     transition: 0.3s ease all;
     z-index: 1;
     background-color: transparent;
+    overflow: hidden;
   }
   
   button:before {
@@ -69,6 +69,7 @@ button {
     overflow: hidden;
     position: relative;
   }
+
   .hero-section .swiper-container, .hero-section .swiper-wrapper, .hero-section .swiper-slide {
     height: 100%;
   }
@@ -102,10 +103,10 @@ button {
   .hero-section .slide-content {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 5%;
     transform: translateY(-50%);
     color: white;
-    max-width: 600px;
+    padding-inline: 40px;
     z-index: 1;
     opacity: 0;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -527,6 +528,51 @@ button {
 }
 
 
+.services-swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .services-swiper .swiper-slide {
+    width: 300px;
+    height: auto;
+  }
+  
+  .services-swiper .swiper-slide .iconbox {
+    display: block;
+    width: 100%;
+  }
+  
+  .services-swiper .swiper-slide .iconbox .iconbox_wrapper {
+    height: 100%;
+  }
+  
+  .services-swiper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: var(--second-color);
+    opacity: 0.5;
+  }
+  
+  .services-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .services-swiper .swiper-slide {
+      width: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services-swiper .swiper-slide {
+      width: 200px;
+    }
+  }
+
+
+
 @media screen and (max-width: 480px) {
     
     .about-hero h1 {
@@ -540,5 +586,30 @@ button {
 
     .about-hero-section .lead{
         font-size: 1rem;
+    }
+
+    .hero-section .slide-title {
+        font-size: 1.5rem;
+      }
+      .hero-section .slide-description {
+        font-size: 1.1rem;
+      }
+
+      .hero-section .slide-content{
+        left: 0px;
+      }
+
+      .about-hero-section .content-section{
+        padding: 60px 20px 0px;
+      }
+      .about-hero-section .icon-box{
+        padding: 40px 10px;
+      }
+
+    button{
+        font-size: 0.9rem;
+        padding: 0.2rem 0.9rem;
+        border: 1px solid #ffa903;
+        font-weight: 500;
     }
   }
