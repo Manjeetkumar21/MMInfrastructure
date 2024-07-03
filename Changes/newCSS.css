@@ -2,6 +2,8 @@
 
 :root {
     --primary-heading-color: #FFA903;
+    --primary-color: #00326f;
+  --second-color: #ffa903;
 }
 
 body {
@@ -613,3 +615,38 @@ button {
         font-weight: 500;
     }
   }
+  .blog-swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .blog-swiper .swiper-slide {
+    height: auto;
+  }
+  
+  .blog-swiper .swiper-pagination {
+    position: static;
+    margin-top: 30px;
+  }
+  
+  .blog-swiper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: var(--second-color);
+    opacity: 0.5;
+  }
+  
+  .blog-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+  
+
+  
+  @media (max-width: 768px) {
+    .blog-swiper .swiper-slide {
+      width: auto;
+    }
+  }
+
+ 

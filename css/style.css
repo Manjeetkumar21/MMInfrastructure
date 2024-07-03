@@ -2515,6 +2515,10 @@ option {
 .blog_post {
   position: relative;
   margin: 0px 0px 30px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0px 9px 20px 5px rgba(170, 182, 192, 0.2);
 }
 
 .blog_post .post_img {
@@ -2582,6 +2586,7 @@ option {
   color: #181d35;
   margin-bottom: 20px;
   line-height: 32px;
+  font-size: 1.2rem;
 }
 
 .blog_post .post_content .post_title a {
@@ -2637,11 +2642,7 @@ option {
   left: calc(100% - 15px);
 }
 
-.blog_post.blog_post2 {
-  box-shadow: 0px 9px 20px 5px rgba(170, 182, 192, 0.2);
-  margin-left: 10px;
-  margin-right: 10px;
-}
+
 
 .blog_post.blog_post2 .calendar.position_two {
   top: 20px;
@@ -9161,10 +9162,7 @@ video {
   }
 }
 
-/* Forms (shipping_form) */
-.shipping_form {
-  /* Coupon Code */
-}
+
 
 .shipping_form
   .select2-container--default
@@ -9354,9 +9352,7 @@ video {
   color: var(--second-color);
 }
 
-.place_order {
-  /* Customize Radio Button */
-}
+
 
 .place_order ul {
   margin: 0px;
