@@ -363,8 +363,14 @@ button {
 }
 .about-hero-section .icon-box:hover i {
     transform: scale(1.1);
-    color: #222;
+    color: #000b3d;
 }
+
+.about-hero-section .icon-box:hover h4,
+.about-hero-section .icon-box:hover p{
+  color: #000b3d;
+}
+
 .about-hero-section .icon-box h4 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -648,5 +654,4 @@ button {
       width: auto;
     }
   }
-
- 
+  
