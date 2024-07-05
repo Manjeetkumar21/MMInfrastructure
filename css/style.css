@@ -2441,19 +2441,7 @@ option {
   line-height: 30px;
 }
 
-/*.project_details_inner{
-    .post_content{
-        .fulltext{
-            .testibox1{
-                &:hover{
-                    .testibox_inner{
-                        background: transparent;
-                    }
-                }
-            }
-        }
-    }
-}*/
+
 .owl-theme .owl-dots .owl-dot span {
   width: 12px;
   height: 12px;
@@ -5265,7 +5253,7 @@ video {
 }
 
 .project_details {
-  /*--- Related Posts ---*/
+ padding-top: 60px;
 }
 
 .project_details .post_img {
